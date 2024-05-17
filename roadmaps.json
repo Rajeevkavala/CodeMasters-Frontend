@@ -1,0 +1,32 @@
+[
+    {
+      "title": "Frontend Developer",
+      "description": "Step by step guide to becoming a modern frontend developer in 2024",
+      "href": "https://roadmap.sh/pdfs/roadmaps/frontend.pdf"
+    },
+    {
+      "title": "Backend Developer",
+      "description": "Step by step guide to becoming a modern backend developer in 2024",
+      "href": "https://roadmap.sh/pdfs/roadmaps/backend.pdf"
+    },
+    {
+      "title": "Full Stack Developer",
+      "description": "Step by step guide to becoming a modern full stack developer in 2024",
+      "href": "https://roadmap.sh/pdfs/roadmaps/full-stack.pdf"
+    },
+    {
+      "title": "Cyber Security Expert",
+      "description": "Step by step guide to becoming a Cyber Security Expert in 2024",
+      "href": "https://roadmap.sh/pdfs/roadmaps/cyber-security.pdf"
+    },
+    {
+      "title": "Android Developer",
+      "description": "Step by step guide to becoming an Android developer in 2024",
+      "href": "https://roadmap.sh/pdfs/roadmaps/android.pdf"
+    },
+    {
+      "title": "DevOps Engineer",
+      "description": "Step by step guide for DevOps engineers in 2024",
+      "href": "https://roadmap.sh/pdfs/roadmaps/devops.pdf"
+    }
+]

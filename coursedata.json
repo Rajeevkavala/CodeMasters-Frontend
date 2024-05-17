@@ -1,0 +1,54 @@
+[
+    {
+      "title": "HTML Development",
+      "path": "/courses/HTML",
+      "icon": "html",
+      "description": "Learn HTML (Hypertext Markup Language) for web content structure."
+    },
+    {
+      "title": "CSS Development",
+      "path": "/courses/CSS",
+      "icon": "css",
+      "description": "Master CSS to style web elements for visually appealing websites."
+    },
+    {
+      "title": "JavaScript",
+      "path": "/courses/JSDevelopment",
+      "icon": "js",
+      "description": "Learn React from Scratch: Creating Interactive User Interfaces."
+    },
+    {
+      "title": "React Development",
+      "path": "/courses/React",
+      "icon": "react",
+      "description": "Learn React from Scratch: Creating Interactive User Interfaces."
+    },
+    {
+      "title": "Java Development",
+      "path": "/courses/Java",
+      "icon": "java",
+      "description": "Cross-platform application development with Java programming."
+    },
+    {
+      "title": "Python Development",
+      "path": "/courses/Python",
+      "icon": "python",
+      "description": "Versatile language for problem-solving and application development."
+    },
+    {
+      "title": "C++ Development",
+      "path": "/courses/C++",
+      "icon": "c++",
+      "description": "Powerful, efficient coding language for software development."
+    },
+    {
+      "title": "SQL Development",
+      "path": "/courses/Sql",
+      "icon": "sql",
+      "description": "Effective data management and retrieval using SQL database language."
+    }
+  ]
+
+
+
+  

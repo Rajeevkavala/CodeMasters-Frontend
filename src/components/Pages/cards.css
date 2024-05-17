@@ -1,0 +1,89 @@
+/* #2D3B48 */
+:root {
+    --main-color: #0062ff;
+    --supporting-color: #ebf3fe;
+    --font-color: #424242;
+    /* --bg-color: #ffffff; */
+    --bg-color: #ffffff;
+    --heading-color: #000a19;
+    --hero-heading-color: #003b99;
+    --white-color: #ffffff;
+    --para-color: #504e4d;
+    --bnt-hover-bg-color: #003b99;
+    /* --btn-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+    --hero-gradient: linear-gradient(to top right, #3d86fa, #4484fb, #679eff, #b3d2ff, #ebf3fe);
+    --btn-box-shadow:rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    --footer-bg-color: #040d12;
+    --menu:white;
+}
+.cards{
+    background-color: var(--bg-color);
+}
+.team-container{    
+    max-width: 142rem;
+    margin: 0 auto;
+}
+.card{
+  background-color: var(--bg-color);
+  border: 1px solid hsl(0, 0%, 80%);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  box-shadow: 5px 5px 5px hsl(0, 0%, 0%,0.1);
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  max-width: 142rem;
+  display: inline-block;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  
+}
+.text-about{
+    max-width: 142rem;
+    margin: 0 19px;
+}
+.About-team{
+    color: var(--heading-color);
+    padding-bottom: 30px;
+    font-size: 3.2rem;
+}
+.profile-cards{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.profile-pic{
+    height: 220px;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+}
+
+.card h2{
+    color: var(--menu);
+}
+.card:hover{
+    cursor: pointer;
+    background: linear-gradient(to top right, #0575e6, #021b79);
+    scale: 1.12;
+}
+.card:hover h2,.card:hover p{
+    color: white;
+}
+@media (width<=520px) {
+    .card{
+        width: 100%;
+    }
+    .card:hover{
+        scale: 1.02;
+    }
+}
