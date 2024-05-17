@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Research",
+    "description": "We start by learning what you need. We look at what's new and exciting in learning and choose topics that match what you want to learn.",
+    "icon": "https://i.ibb.co/bsd3K6t/research.png",
+    "alt": "Research",
+    "delay": 0
+  },
+  {
+    "title": "Design",
+    "description": "Next, we make the lessons. We make them fun and interesting for you. We make sure they work for different ways people like to learn.",
+    "icon": "https://i.ibb.co/LtR2y2j/design.png",
+    "alt": "Design",
+    "delay": 300
+  },
+  {
+    "title": "Development",
+    "description": "After that, we turn the lessons into things you can use online. We use the latest tools to make sure they work well and make you happy.",
+    "icon": "https://i.ibb.co/10PxpmD/Coding.png",
+    "alt": "Development",
+    "delay": 600
+  }
+]

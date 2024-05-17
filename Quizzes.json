@@ -1,0 +1,50 @@
+[
+      {
+      "title": "HTML",
+      "iconClass": "fa-solid fa-code",
+      "description": "Test Your Skills in our Interactive HTML Quiz!",
+      "path": "/quizzes/HTML"
+    },
+    {
+
+      "title": "CSS",
+      "iconClass": "fa-solid fa-laptop-code",
+      "description": "Unraveling Styles in our Interactive CSS Quiz!",
+      "path": "/quizzes/CSS"
+    },
+    {
+
+      "title": "JavaScript",
+      "iconClass": "fa-solid fa-laptop-code",
+      "description": "Navigate Through the Code in our Interactive JavaScript Quiz!",
+      "path": "/quizzes/JavaScript"
+    },
+    {
+
+      "title": "Java Development",
+      "iconClass": "fa-solid fa-laptop-code",
+      "description": "Dive into Code Complexity with our Interactive Java Quiz!",
+      "path": "/quizzes/Java"
+    },
+    {
+
+      "title": "React",
+      "iconClass": "fa-solid fa-laptop-code",
+      "description": "Unveil Components in our Interactive React Quiz!",
+      "path": "/quizzes/React"
+    },
+    {
+
+      "title": "Angular",
+      "iconClass": "fa-solid fa-laptop-code",
+      "description": "Explore Frontend Magic in our Interactive Angular Quiz!",
+      "path": "/quizzes/Angular"
+    },
+    {
+
+      "title": "Spring Boot",
+      "iconClass": "fa-solid fa-laptop-code",
+      "description": "Navigate Through Java's Power in our Interactive Spring Boot Quiz!",
+      "path": "/quizzes/SpringBoot"
+    }
+]
