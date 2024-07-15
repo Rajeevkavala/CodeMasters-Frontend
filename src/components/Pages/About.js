@@ -66,7 +66,7 @@ import LazyLoad from 'react-lazyload';
                     <div className="container">
                         <h2 className="section-common-heading">About CodeMasters</h2>
                         <p className="section-common-subheading">
-                            Guiding Your Learning Journey through Research, Design, and Development Excellence.
+                            Guiding Your Learning Journey through Research, Design, and Development Excellences.
                         </p>
                     </div>
                     <div className="container grid grid-three--cols">
