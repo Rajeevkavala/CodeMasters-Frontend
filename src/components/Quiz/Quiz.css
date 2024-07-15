@@ -1,0 +1,215 @@
+body{
+    --main-color: #0062ff;
+    --font-color: #424242;
+    /* --bg-color: #ffffff; */
+    --bg-color: #ffffff;
+    --heading-color: #000a19;
+    --hero-heading-color: #003b99;
+    --white-color: #ffffff;
+    --para-color: #504e4d;
+    --bnt-hover-bg-color: #0458C3;
+    /* --btn-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+    --hero-gradient: linear-gradient(to top right, #3d86fa, #4484fb, #679eff, #b3d2ff, #ebf3fe);
+    --btn-box-shadow:rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    --footer-bg-color: #040d12;
+    --menu: black;
+    --menu-bg:rgba( 255, 255, 255, 0.3 );
+    --nav-box-shadow: 0px 1px 10px #999;
+    --course-div-hover: white;
+    --input-bg:#e2e2e2;
+    --active: #0062ff;
+    --supporting-color: #ebf3fe;
+    --video-text-color:black;
+    --video-hover:#0458C3;
+}
+  
+[data-theme="dark"]{
+    --main-color: white;
+    --para-color:white;
+    --bg-color:black;
+    --hero-gradient:black;
+    --hero-heading-color:white; 
+    --menu:white;
+    --menu-bg:rgba(255, 255, 255, 0);
+    --heading-color:white;
+    --nav-box-shadow: 0px 1px 10px #0051ff;
+    --course-div-hover:linear-gradient(to top right, #0575e6, #021b79);
+    --input-bg: #181A1B;
+    --active: #0062ff;
+    --bnt-hover-bg-color: #0458C3;
+    --video-text-color:white;
+    --video-hover:#0458C3;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Quiz-body{
+    height: max-content;
+    width: 100%;
+    background: var(--bg-color);
+    padding-top: 20px;
+}
+
+.quiz-heading{
+    text-align: center;
+}
+
+.Quiz-Container{
+    width: 750px;
+    margin: auto;
+    background: var(--input-bg);
+    color: var(--heading-color);
+    box-shadow: var(--nav-box-shadow);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 10px;
+    padding: 20px 50px;
+}
+
+.Quiz-Container hr{
+    height: 2px;
+    border: none;
+    background: #707070;
+}
+
+.Quiz-Container h1{
+    font-size: 37px;
+    font-weight: bold;
+}
+
+.Quiz-Container h2{
+    font-size: 27px;
+    font-weight: 500;
+}
+
+.Quiz-Container ul li{
+    color: var(--heading-color);
+    display: flex;
+    align-items: center;
+    height: 50px;
+    padding-left: 15px;
+    border: 1px solid #686868;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.Quiz-Container button{
+    margin: auto;
+    width: 250px;
+    height: 50px;
+    background: #0062FF;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    border: #E2E2E2;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.Quiz-Container .index{
+    margin: auto;
+    font-size: 18px;
+}
+
+.Quiz-Container .correct{
+    background: #05bd74;
+    border-color: #00d397;
+}
+
+.Quiz-Container .wrong{
+    background: #c41919;
+    border-color: #ff4a4a;
+    text-decoration: line-through;
+}
+
+.Quiz-Container .chosen{
+    background: #5468FF;
+}
+
+.Quiz-Container .result-div{
+    display: flex;
+    gap: 10px;
+}
+
+.result-container{
+    margin-block: 10px;
+}
+
+.result-container h3{
+    font-size: 20px;
+    margin-block: 10px;
+}
+
+.bold-ans{
+    font-weight: bold;
+    color: rgb(23, 30, 221);
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+    .Quiz-Container {
+        width: 90%;
+        padding: 20px 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .Quiz-Container {
+        width: 95%;
+        padding: 15px 20px;
+    }
+
+    .Quiz-Container h1 {
+        font-size: 32px;
+    }
+
+    .Quiz-Container h2 {
+        font-size: 24px;
+    }
+
+    .Quiz-Container ul li {
+        font-size: 18px;
+        height: 45px;
+    }
+
+    .Quiz-Container button {
+        width: 200px;
+        height: 45px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .Quiz-Container {
+        width: 100%;
+        padding: 10px 15px;
+    }
+
+    .Quiz-Container h1 {
+        font-size: 28px;
+    }
+
+    .Quiz-Container h2 {
+        font-size: 20px;
+    }
+
+    .Quiz-Container ul li {
+        font-size: 16px;
+        height: 40px;
+    }
+
+    .Quiz-Container button {
+        width: 180px;
+        height: 40px;
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,221 @@
+body{
+  --main-color: #0062ff;
+  --font-color: #424242;
+  /* --bg-color: #ffffff; */
+  --bg-color: #ffffff;
+  --heading-color: #000a19;
+  --hero-heading-color: #003b99;
+  --white-color: #ffffff;
+  --para-color: #504e4d;
+  --bnt-hover-bg-color: #0458C3;
+  /* --btn-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+  --hero-gradient: linear-gradient(to top right, #3d86fa, #4484fb, #679eff, #b3d2ff, #ebf3fe);
+  --btn-box-shadow:rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  --footer-bg-color: #040d12;
+  --menu: black;
+  --menu-bg:rgba( 255, 255, 255, 0.3 );
+  --nav-box-shadow: 0px 1px 10px #999;
+  --course-div-hover: white;
+  --input-bg:#e2e2e2;
+  --active: #0062ff;
+  --supporting-color: #ebf3fe;
+  --video-text-color:black;
+  --video-hover:#0458C3;
+}
+
+[data-theme="dark"]{
+  --main-color: white;
+  --para-color:white;
+  --bg-color:black;
+  --hero-gradient:black;
+  --hero-heading-color:white; 
+  --menu:white;
+  --menu-bg:rgba(255, 255, 255, 0);
+  --heading-color:white;
+  --nav-box-shadow: 0px 1px 10px #0051ff;
+  --course-div-hover:linear-gradient(to top right, #0575e6, #021b79);
+  --input-bg: #181A1B;
+  --active: #0062ff;
+  --bnt-hover-bg-color: #0458C3;
+  --video-text-color:white;
+  --video-hover:#0458C3;
+}
+
+.courses-video-section{
+  background: var(--bg-color);
+  padding-top: 10px;
+}
+.heading {
+  color: var(--para-color);
+  font-size: 40px;
+  text-align: center;
+  padding: 10px;
+}
+
+.container-video {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 15px;
+  align-items: flex-start;
+  padding: 5px 5%;
+}
+
+.container-video .main-video {
+  background: var(--input-bg);
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: var(--nav-box-shadow);
+}
+
+.container-video .main-video video {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.container-video .main-video .video-title {
+  color: var(--video-text-color);
+  font-size: 23px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.container-video .video-list {
+  background: var(--bg-color);
+  border-radius: 5px;
+  height: 595px;
+  overflow-y: scroll;
+  box-shadow: var(--nav-box-shadow);
+}
+
+.container-video .video-list::-webkit-scrollbar {
+  width: 7px;
+}
+
+.container-video .video-list::-webkit-scrollbar-track {
+  background: #ccc;
+  border-radius: 50px;
+}
+
+.container-video .video-list::-webkit-scrollbar-thumb {
+  background: #666;
+}
+
+.container-video .video-list .vid video {
+  width: 100px;
+  border-radius: 5px;
+}
+
+.container-video .video-list .vid {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: var(--input-bg);
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, .1);
+  cursor: pointer;
+}
+
+.container-video .video-list .vid:hover {
+  background: var(--video-hover);
+}
+
+.container-video .video-list .vid.active {
+  background: #0458C3;
+}
+
+.container-video .video-list .vid.active .title {
+  color: #fff;
+}
+
+.container-video .video-list .vid .title {
+  color: var(--video-text-color);
+  font-size: 17px;
+}
+
+@media (max-width: 991px) {
+  .container-video {
+      grid-template-columns: 1.5fr 1fr;
+      padding: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container-video {
+      grid-template-columns: 1fr;
+  }
+}
+
+/* Additional styling */
+.heading {
+  width: fit-content;
+  text-align: center;
+  margin-block: 20px;
+}
+
+.video {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  overflow: hidden;
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.vid .title {
+  margin-top: 5px;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 768px) {
+  .container-video {
+      flex-direction: column; /* Change to a single column layout on smaller screens */
+      align-items: center;
+  }
+
+  .main-video,
+  .video-list {
+      flex: 1 1 100%; /* Make both sections take full width on smaller screens */
+      margin-right: 0;
+  }
+
+}
+
+.btn-with-head{
+  max-width: 142rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.back-btn{
+  width: 150px;
+  height: 60px;
+  border: 3px solid #315cfd;
+  border-radius: 45px;
+  transition: all 0.3s;
+  cursor: pointer;
+  background: white;
+  font-size: 1.2em;
+  font-weight: 550;
+  font-family: 'Montserrat', sans-serif;
+  color: #0062FF;  
+}
+
+.back-btn:hover{
+  background: #315cfd;
+  font-size: 1.5em;
+  color: white;
+
+}
+
