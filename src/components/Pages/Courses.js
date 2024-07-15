@@ -10,7 +10,7 @@ export const Courses = () => {
 
   useEffect(() => {
     // Fetch course data from backend API
-    fetch('https://codemastersbackend-production.up.railway.app/courses') // Update URL with your backend endpoint
+    fetch('https://codemasters-backend-production.up.railway.app/courses') // Update URL with your backend endpoint
       .then(response => response.json())
       .then(data => {
         setCourses(data);

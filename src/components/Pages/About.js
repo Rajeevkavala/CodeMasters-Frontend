@@ -11,7 +11,7 @@ import LazyLoad from 'react-lazyload';
     useEffect(() => {
         const fetchAboutData = async () => {
             try {
-                const response = await axios.get('https://codemastersbackend-production.up.railway.app/api/about'); // Update with your backend URL
+                const response = await axios.get('https://codemasters-backend-production.up.railway.app/api/about'); // Update with your backend URL
                 setAboutData(response.data);
                 setLoading(false);
             } catch (error) {

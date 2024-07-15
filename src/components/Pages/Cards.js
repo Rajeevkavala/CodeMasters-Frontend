@@ -7,7 +7,7 @@ const Card = () => {
   const [isLoading, setIsLoading] = useState(true); // Add a state variable for loading
 
   useEffect(() => {
-    fetch('https://codemastersbackend-production.up.railway.app/api/team-members') // Update the URL to match your backend endpoint
+    fetch('https://codemasters-backend-production.up.railway.app/api/team-members') // Update the URL to match your backend endpoint
       .then(response => response.json())
       .then(data => {
         setTeamMembers(data);

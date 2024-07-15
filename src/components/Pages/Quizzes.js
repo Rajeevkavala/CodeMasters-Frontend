@@ -38,7 +38,7 @@ export const Quizzes = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    axios.get('https://codemastersbackend-production.up.railway.app/api/quizzes')
+    axios.get('https://codemasters-backend-production.up.railway.app/api/quizzes')
       .then(response => {
         setQuizzes(response.data);
         setLoading(false);

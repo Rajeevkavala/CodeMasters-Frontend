@@ -21,7 +21,7 @@ export const Roadmaps = () => {
 
   const fetchRoadmaps = async () => {
     try {
-      const response = await axios.get('https://codemastersbackend-production.up.railway.app/api/roadmaps');
+      const response = await axios.get('https://codemasters-backend-production.up.railway.app/api/roadmaps');
       setRoadmaps(response.data);
       setLoading(false);
     } catch (error) {
