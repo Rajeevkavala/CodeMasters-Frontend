@@ -357,7 +357,7 @@ button {
   background-color: var(--active);
 }
 .progress-div{
-  width: fit-content;
+  width: 100%;
 
 }
 .progress-div h3{
