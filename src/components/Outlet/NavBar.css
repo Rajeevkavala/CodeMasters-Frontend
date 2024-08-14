@@ -248,7 +248,7 @@
     align-items: center;
     list-style: none;
     position: fixed;
-    z-index: 9999;
+    z-index: 99;
     top: 0;
     background-color: var(--bg-color);
     box-shadow: var(--nav-box-shadow);

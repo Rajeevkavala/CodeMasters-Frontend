@@ -9,6 +9,7 @@ import ProtectedRoutes from './components/Features/ProtectedRoutes';
 import { AnimatePresence } from 'framer-motion';
 import '../src/components/Pages/style.css';
 import { Account } from './components/Pages/Account';
+import {CodemastersChatbot} from './components/AI-CHATBOT/CodemastersChatbot'
 
 const CPlusPlusPlaylist = React.lazy(() => import('./components/Courses/VideoPlaylists').then(module => ({ default: module.CPlusPlusPlaylist })));
 const CSSPlaylist = React.lazy(() => import('./components/Courses/VideoPlaylists').then(module => ({ default: module.CSSPlaylist })));
@@ -44,6 +45,7 @@ function App() {
   return (
     <React.Fragment>
       <AnimatePresence>
+        <CodemastersChatbot />
         <NavBar />
         <ScrollToTop/>
         <AuthContextProvider>
