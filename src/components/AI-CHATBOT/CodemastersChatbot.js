@@ -3,6 +3,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import '../../App.css';
 import { GoogleGenerativeAI } from '@google/generative-ai';
 import { toast } from 'react-toastify';
+
 export const CodemastersChatbot = () => {
   const [messages, setMessages] = useState([]);
   const [showChatbox, setShowChatbox] = useState(true);
@@ -133,22 +134,45 @@ export const CodemastersChatbot = () => {
 
   const ChatInput = ({ onSend }) => {
     const [message, setMessage] = useState('');
+    const textareaRef = useRef(null);
 
-    const handleChange = (e) => setMessage(e.target.value);
+    const handleChange = (e) => {
+      setMessage(e.target.value);
+    };
+
+    const handleInput = () => {
+      const textarea = textareaRef.current;
+      textarea.style.height = 'auto'; // Reset height
+      textarea.style.height = textarea.scrollHeight + 'px'; // Set to scrollHeight
+    };
+
+    const handleKeyPress = (e) => {
+      if (e.key === 'Enter' && !e.shiftKey) {
+        e.preventDefault(); // Prevent new line
+        handleSend();
+      }
+    };
 
     const handleSend = () => {
       if (message.trim()) {
         onSend(message);
         setMessage('');
+        if (textareaRef.current) {
+          textareaRef.current.style.height = 'auto'; // Reset height after sending
+        }
       }
     };
 
     return (
       <div className="chat-input">
         <textarea
+          ref={textareaRef}
           value={message}
           onChange={handleChange}
+          onInput={handleInput}
+          onKeyPress={handleKeyPress}
           placeholder="Enter a Message...."
+          style={{ overflow: 'hidden', resize: 'none' }} // Disable manual resizing
         />
         <span id="send-btn" className="material-symbols-outlined" onClick={handleSend}>
           send
@@ -180,4 +204,3 @@ export const CodemastersChatbot = () => {
     </div>
   );
 };
-

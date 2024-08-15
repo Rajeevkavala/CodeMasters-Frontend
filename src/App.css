@@ -208,7 +208,7 @@ body{
   justify-content: center;
   outline: none;
   cursor: pointer;
-  background: var(--main-color);
+  background: #0051ff;
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -261,7 +261,7 @@ body{
 }
 
 .chatbot header{
-  background: var(--main-color);
+  background: #0062ff;
   margin-top: 0px;
   padding: 16px 0;
   text-align: center;
@@ -285,6 +285,7 @@ body{
   -o-transform: translateY(-50%);
 }
 .chatbot .chatbox{
+  background: white;
   height: 410px;
   /* width: fit-content; */
   overflow-y: auto;
@@ -298,7 +299,7 @@ body{
   width: 32px;
   color: #fff;
   align-self: flex-end;
-  background: var(--main-color);
+  /* background: var(--main-color); */
   text-align: center;
   line-height: 32px;
   border-radius: 4px;
@@ -349,6 +350,7 @@ body{
 }
 
 .chat-input textarea{
+  background: #e2e2e2;
   border-radius: 10px;
   height: 55px;
   width: 100%;
@@ -364,7 +366,7 @@ body{
 }
 .chat-input span{
   align-self: flex-end;
-  color: var(--main-color);
+  color: #0051ff;
   font-size: 2.7rem;
   line-height: 55px;
   cursor: pointer;
