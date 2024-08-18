@@ -30,6 +30,12 @@
       "description": "Cross-platform application development with Java programming."
     },
     {
+      "title": "DSA Using Java",
+      "path": "/courses/DSA",
+      "icon":"java",
+      "description": "Learn DSA Using Java With CodeMasters."
+    },
+    {
       "title": "Python Development",
       "path": "/courses/Python",
       "icon": "python",

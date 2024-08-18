@@ -9,7 +9,8 @@ const playlists = [
   { id: "PLsyeobzWxl7pe_IiTfNyr55kwJPWbgxB5", title: "Java" },
   { id: "PL0Zuz27SZ-6MQri81d012LwP5jvFZ_scc", title: "Python" },
   { id: "PLBlnK6fEyqRh6isJ01MBnbNpV3ZsktSyS", title: "C++" },
-  { id: "PLTP0UYcvxKohmIsnYDbYJwicsAhySf5xD", title: "SQL" }
+  { id: "PLTP0UYcvxKohmIsnYDbYJwicsAhySf5xD", title: "SQL" },
+  { id: "PL9gnSGHSqcnr_DxHsP7AW9ftq0AtAyYqJ", title: "DSA"}
 ];
 
 export function HTMLPlaylist() {
@@ -42,4 +43,8 @@ export function CPlusPlusPlaylist() {
 
 export function SQLPlaylist() {
   return <VideoPlaylist playlistId={playlists[7].id} title={playlists[7].title} />;
+}
+
+export function DSAPlaylist() {
+  return <VideoPlaylist playlistId={playlists[8].id} title={playlists[8].title} />;
 }

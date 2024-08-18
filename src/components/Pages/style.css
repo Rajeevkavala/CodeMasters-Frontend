@@ -1126,13 +1126,13 @@ footer .grid {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: var(--main-color);
+  background: #0062ff;
   border-radius: 50px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--heading-color);
+  background: #002c72;
 }
 
 /***** End scrollbar Section *****/

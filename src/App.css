@@ -417,7 +417,7 @@ margin-right: 8px;
 font-size: 1.5em; /* Adjust size as needed */
 }
 pre{
-background: #f2f2f2;
+background: var(--bg-color);
 padding: 12px 16px;
 }
 /* From Uiverse.io by ilkhoeri */ 
@@ -529,12 +529,12 @@ width: 1rem;
 
 /* Track */
 ::-webkit-scrollbar-track {
-background: var(--supporting-color);
+background: #0062ff;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-background: var(--main-color);
+background: #0062ff;
 border-radius: 50px;
 }
 
