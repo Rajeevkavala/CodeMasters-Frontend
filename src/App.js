@@ -19,6 +19,7 @@ const JavaPlaylist = React.lazy(() => import('./components/Courses/VideoPlaylist
 const PythonPlaylist = React.lazy(() => import('./components/Courses/VideoPlaylists').then(module => ({ default: module.PythonPlaylist })));
 const ReactPlaylist = React.lazy(() => import('./components/Courses/VideoPlaylists').then(module => ({ default: module.ReactPlaylist })));
 const SQLPlaylist = React.lazy(() => import('./components/Courses/VideoPlaylists').then(module => ({ default: module.SQLPlaylist })));
+const DSAPlaylist = React.lazy(() => import('./components/Courses/VideoPlaylists').then(module => ({ default: module.DSAPlaylist })));
 
 const HtmlQuiz = React.lazy(() => import("./components/Quiz/HtmlQuiz"));
 const CssQuiz = React.lazy(() => import("./components/Quiz/CssQuiz"));
@@ -141,6 +142,11 @@ function App() {
               <Route path='/quizzes/SpringBoot' element={
                 <ProtectedRoutes>
                   <SpringBootQuiz />
+                </ProtectedRoutes>
+              } />
+              <Route path='/courses/DSA' element={
+                <ProtectedRoutes>
+                  <DSAPlaylist />
                 </ProtectedRoutes>
               } />
               <Route path='/roadmaps' element={
