@@ -42,6 +42,7 @@ body{
 }
 
 .courses-video-section{
+  height: 150vh;
   background: var(--bg-color);
   padding-top: 10px;
 }

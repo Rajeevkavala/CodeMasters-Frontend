@@ -195,6 +195,7 @@ body{
 
 
 .chatbot-toggler{
+  box-shadow: none;
   z-index: 999;
   position: fixed;
   right: 40px;
