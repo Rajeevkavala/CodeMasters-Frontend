@@ -6,7 +6,7 @@ import { toast } from 'react-toastify';
 
 export const CodemastersChatbot = () => {
   const [messages, setMessages] = useState([]);
-  const [showChatbox, setShowChatbox] = useState(true);
+  const [showChatbox, setShowChatbox] = useState(false);
   const [thinking, setThinking] = useState(false);
 
   const API_KEY = process.env.REACT_APP_GEMINI_API_KEY;

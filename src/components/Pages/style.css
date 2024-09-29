@@ -6,13 +6,6 @@
   font-family: "Poppins", sans-serif;
 }
 
-html {
-  font-size: 62.5%;
-  /* 1rem = 10px  */
-  /* scroll-behavior: smooth; */
-  /* scroll-snap-type: Y proximity; */
-}
-
 h1,
 h2,
 h3,
