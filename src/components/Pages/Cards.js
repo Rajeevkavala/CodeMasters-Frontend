@@ -38,7 +38,7 @@ const Card = () => {
               teamMembers.map((member, index) => (
                 <LazyLoad key={index} height={200} offset={100}>
                   <div className="card">
-                    <img className="profile-pic" src={member.imageUrl} alt={member.name} />
+                    <img className="profile-pic" src={member.imageUrl} alt={member.name} loading="lazy"/>
                     <h2>{member.name}</h2>
                     <p>{member.roll}</p>
                   </div>

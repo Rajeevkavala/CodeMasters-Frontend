@@ -74,7 +74,7 @@ import LazyLoad from 'react-lazyload';
                             <LazyLoad height={200} key={item.title} once>
                                 <div className="about-div aos-init aos-animate" data-aos="fade-up" data-aos-delay={item.delay}>
                                     <div className="icon">
-                                        <img src={item.icon} alt={item.alt} />
+                                        <img src={item.icon} alt={item.alt} loading="lazy"/>
                                     </div>
                                     <h3 className="section-common--title">{item.title}</h3>
                                     <p>{item.description}</p>
