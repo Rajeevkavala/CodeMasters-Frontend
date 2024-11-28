@@ -1008,7 +1008,7 @@ textarea {
   padding: 1.4rem 2.4rem;
   font-size: 1.7rem;
   letter-spacing: 0.1rem;
-  color: var(--font-color);
+  color: #797979;
   background-color: var(--input-bg);
 }
 
