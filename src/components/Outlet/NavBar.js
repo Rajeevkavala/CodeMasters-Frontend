@@ -37,7 +37,7 @@ const NavBar = () => {
             <li className="logo">
               <NavLink to="/" onClick={closeNavbar}>
                 <div className='logo-img'>
-                  <img className='logo-code' src="https://res.cloudinary.com/dukkntfyp/image/upload/v1732525675/favicon_qkwll4.png" alt="logo" width="15%"/>
+                  <img className='logo-code' src="https://res.cloudinary.com/clicknbuy/image/upload/v1732525675/favicon_qkwll4.png" alt="logo" width="15%"/>
                   <h1 className='logo-name'>CodeMasters</h1>
                 </div>
               </NavLink>

@@ -10,7 +10,7 @@ export const Courses = () => {
 
   useEffect(() => {
     // Fetch course data from backend API
-    fetch('https://codemasters-backend-production.up.railway.app/courses') // Update URL with your backend endpoint
+    fetch('https://gross-effie-rajeevkavala-2e775385.koyeb.app/courses') // Update URL with your backend endpoint
       .then(response => response.json())
       .then(data => {
         setCourses(data);
@@ -113,7 +113,7 @@ export const Courses = () => {
                         {renderIcon(course.icon)}
                       </div>
                       <h3 className="section-common--title">{course.title}</h3>
-                      <p>{course.description}</p>
+                      <p>{course.description+{}}</p>
                     </div>
                   </NavLink>
                 ))

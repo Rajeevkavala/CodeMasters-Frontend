@@ -15,7 +15,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="contact-image">
-            <img src="https://res.cloudinary.com/dukkntfyp/image/upload/v1732525677/main_iq9uoe.png" alt="a guy doing coding" loading="lazy"/>
+            <img src="https://res.cloudinary.com/clicknbuy/image/upload/v1732525677/main_iq9uoe.png" alt="a guy doing coding" loading="lazy"/>
           </div>
         </div>
       </div>

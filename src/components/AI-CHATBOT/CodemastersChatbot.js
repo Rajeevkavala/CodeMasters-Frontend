@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import '../../App.css';
-import { GoogleGenerativeAI } from '@google/generative-ai';
+import { GoogleGenAI } from '@google/genai';
 import { toast } from 'react-toastify';
 
 export const CodemastersChatbot = () => {
@@ -8,9 +8,8 @@ export const CodemastersChatbot = () => {
   const [showChatbox, setShowChatbox] = useState(false);
   const [thinking, setThinking] = useState(false);
 
-  const API_KEY = process.env.REACT_APP_GEMINI_API_KEY;
-  const genAI = new GoogleGenerativeAI(API_KEY);
-  const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
+  // Initialize new Gemini client (@google/genai). It will use the provided API key.
+  const ai = new GoogleGenAI({ apiKey: process.env.REACT_APP_GEMINI_API_KEY });
 
   useEffect(() => {
     if (showChatbox) {
@@ -23,12 +22,17 @@ export const CodemastersChatbot = () => {
     setThinking(true);
 
     try {
-      const result = await model.generateContent(userMessage);
-      if (!result || !result.response) {
-        throw new Error('Invalid response');
-      }
+      const result = await ai.models.generateContent({
+        model: 'gemini-2.5-flash',
+        contents: userMessage,
+        config: {
+          thinkingConfig: {
+            thinkingBudget: 0, // Disable thinking to reduce latency/cost
+          },
+        },
+      });
 
-      const responseText = await result.response.text();
+      const responseText = result.text;
       setMessages([...messages, { text: userMessage, type: 'outgoing' }, { text: responseText, type: 'incoming' }]);
     } catch (error) {
       console.error('Error generating content:', error);

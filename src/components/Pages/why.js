@@ -51,7 +51,7 @@ export const Why = () => {
 
           <div className="choose-center--div" data-aos="zoom-in">
             <figure>
-              <img src="https://res.cloudinary.com/dukkntfyp/image/upload/v1732525677/mobile-apps-banner-right-removebg-preview_all3ai.png" alt="Mobile" loading="lazy"/>
+              <img src="https://res.cloudinary.com/clicknbuy/image/upload/v1732525677/mobile-apps-banner-right-removebg-preview_all3ai.png" alt="Mobile" loading="lazy"/>
             </figure>
           </div>
 

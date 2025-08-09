@@ -25,7 +25,7 @@ export const SignUp = () => {
       await createUser(email, password, firstName, lastName);
       // Create user with email, password, first name, and last name
       const userData = { email, password, firstName, lastName };
-      await axios.post('https://codemasters-backend-production.up.railway.app/register', userData);
+      await axios.post('https://gross-effie-rajeevkavala-2e775385.koyeb.app/register', userData);
       navigate('/');
       toast.success("Registration completed successfully");
     } catch (e) {

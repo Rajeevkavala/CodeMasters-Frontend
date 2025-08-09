@@ -21,7 +21,7 @@ export const Roadmaps = () => {
 
   const fetchRoadmaps = async () => {
     try {
-      const response = await axios.get('https://codemasters-backend-production.up.railway.app/api/roadmaps');
+      const response = await axios.get('https://gross-effie-rajeevkavala-2e775385.koyeb.app/api/roadmaps');
       setRoadmaps(response.data);
       setLoading(false);
     } catch (error) {
@@ -40,7 +40,7 @@ export const Roadmaps = () => {
         transition={{ duration: 0.5 }}
       >
         <div className='roadmaps-heading'>
-          <h1 className='roadmap-head'>Developer Roadmaps</h1>
+          <h1 className='roadmap-head'>Developer Roadmaps {new Date().getFullYear()}</h1>
           <p>Step by step guides and paths to learn different tools or technologies.</p>
         </div>
 
@@ -54,7 +54,7 @@ export const Roadmaps = () => {
               <div className='grid-item' key={roadmap.id}>
                 <a href={roadmap.href} target='_blank' rel='noreferrer' style={{ color: 'black' }}>
                   <h2>{roadmap.title}</h2>
-                  <p>{roadmap.description}</p>
+                  <p>{roadmap.description} {new Date().getFullYear()}</p>
                 </a>
               </div>
             ))

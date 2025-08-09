@@ -46,7 +46,7 @@ export const Home = () => {
               <div className="section-hero--image" data-aos="fade-up">
                 <figure>
                   <img
-                    src="https://res.cloudinary.com/dukkntfyp/image/upload/v1732525680/main-hero1_xhnokr.webp"
+                    src="https://res.cloudinary.com/clicknbuy/image/upload/v1732525680/main-hero1_xhnokr.webp"
                     alt="a 3d character doing coding stuff "
                   />
                 </figure>
