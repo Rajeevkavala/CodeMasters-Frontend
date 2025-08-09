@@ -1,74 +1,110 @@
-<<<<<<< HEAD
-# CodeMasters
-=======
-# Getting Started with Create React App
+# Code Masters LMS
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Code Masters is a Learning Management System (LMS) designed to provide **free coding education** for learners of all skill levels. 
+The platform includes organized resources, structured learning paths, hands-on projects, and an AI-powered chatbot for personalized guidance.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+### 1. Accessibility and Inclusivity
+- Free and open-access resources.
+- Diverse representation in content.
+- Adaptive learning tools for personalized experiences.
 
-### `npm start`
+### 2. Structured Learning
+- Comprehensive coding roadmaps for various technologies.
+- Modular course design for incremental progress.
+- User progress tracking.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 3. AI-Powered Doubt Solving
+- AI chatbot offering real-time assistance.
+- 24/7 support for answering coding-related questions.
+- Interactive problem-solving with personalized guidance.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 4. Community and Collaboration
+- Opportunities for peer interaction.
+- Mentorship programs and group projects.
 
-### `npm test`
+### 5. Practical Application
+- Hands-on projects and coding exercises.
+- Code repositories for learning and sharing.
+- Assessments with detailed feedback.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 6. Continuous Improvement
+- Regular curriculum updates.
+- User feedback integration.
+- Performance analytics to track learning impact.
 
-### `npm run build`
+## Tech Stack
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Frontend
+- **React**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Backend
+- **Spring Boot**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Database
+- **MongoDB**
 
-### `npm run eject`
+### AI Chatbot
+- **Gemini API** and **NTP PyTorch**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Installation
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Prerequisites
+- Node.js
+- Java (JDK 17 or higher)
+- MongoDB
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Steps to Run Locally
 
-## Learn More
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/yourusername/codemasters-lms.git
+   cd codemasters-lms
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. **Set up the frontend:**
+   ```bash
+   cd frontend
+   npm install
+   npm start
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+3. **Set up the backend:**
+   ```bash
+   cd backend
+   ./mvnw spring-boot:run
+   ```
 
-### Code Splitting
+4. **Configure MongoDB:**
+   - Start the MongoDB server.
+   - Update the MongoDB URI in the backend configuration file (application.properties or application.yml).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+5. **Access the application:**
+   - Open your browser and navigate to `http://localhost:3000`.
 
-### Analyzing the Bundle Size
+## Contribution Guidelines
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+We welcome contributions to make Code Masters better! Follow these steps:
 
-### Making a Progressive Web App
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+   ```bash
+   git checkout -b feature-name
+   ```
+3. Commit your changes.
+   ```bash
+   git commit -m "Description of changes"
+   ```
+4. Push to your branch.
+   ```bash
+   git push origin feature-name
+   ```
+5. Open a pull request.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## License
 
-### Advanced Configuration
+This project is licensed under the [MIT License](LICENSE).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
->>>>>>> f1d3c53 (Added)
+**Let's code and learn together with Code Masters!**
